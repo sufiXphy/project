@@ -20,7 +20,7 @@ z = np.cos(f2*x)  # Calculating sin(x) values
  
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(x, y, label='sin(x)', color='y')  # Plotting sin(x) curve
-ax.plot(x, z, label='cos(x)', color='g')  # Plotting sin(x) curve
+ax.plot(x, z, label='cos(x)', color='c')  # Plotting sin(x) curve
 ax.set_ylabel("")
 ax.set_xlabel("x")
 ax.tick_params(axis='y', labelsize=20)
@@ -55,7 +55,7 @@ with col2:
     y = np.cos(f2*x)  # Calculating sin(x) values
  
     fig, ax = plt.subplots(figsize=(16, 8))
-    ax.plot(x, y, label='cos(x)', color='g')  # Plotting cos(x) curve
+    ax.plot(x, y, label='cos(x)', color='c')  # Plotting cos(x) curve
     ax.set_ylabel("Cos x")
     ax.set_xlabel("x")
     ax.tick_params(axis='y', labelsize=20)
