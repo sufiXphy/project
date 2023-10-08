@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import streamlit as st
  
 # Header
-st.header('Grafik :sparkles:')
-st.subheader('Plot')
+st.header('Grafik Sinus & Cosinus :sparkles:')
+st.subheader('Plot Grafik')
 
-nama = st.text_input('Nama', 'Upeksha', label_visibility='collapsed')
-st.write('Halo ',nama)
+nama =st.text_input('Nama', 'Moon', label_visibility='collapsed')
+st.write('こんにちは! ',nama)
 
 f1 =st.number_input('f1 = ',value=1)
 f2 =st.number_input('f2 = ',value=1)
@@ -19,7 +19,7 @@ y = np.sin(f1*x)  # Calculating sin(x) values
 z = np.cos(f2*x)  # Calculating sin(x) values
  
 fig, ax = plt.subplots(figsize=(16, 8))
-ax.plot(x, y, label='sin(x)', color='y')  # Plotting sin(x) curve
+ax.plot(x, y, label='sin(x)', color='r')  # Plotting sin(x) curve
 ax.plot(x, z, label='cos(x)', color='c')  # Plotting sin(x) curve
 ax.set_ylabel("")
 ax.set_xlabel("x")
@@ -40,7 +40,7 @@ with col1:
     y = np.sin(f1*x)  # Calculating sin(x) values
  
     fig, ax = plt.subplots(figsize=(16, 8))
-    ax.plot(x, y, label='sin(x)', color='y')  # Plotting sin(x) curve
+    ax.plot(x, y, label='sin(x)', color='r')  # Plotting sin(x) curve
     ax.set_ylabel("Sin x")
     ax.set_xlabel("x")
     ax.tick_params(axis='y', labelsize=20)
