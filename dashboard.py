@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
  
 # Header
-st.header('Grafik Sinus & Cosinus', '/N{winking face}')
+st.header('Grafik Sinus & Cosinus :sparkles:')
 st.subheader('Plot Grafik')
 
 nama =st.text_input('Nama', 'Moon', label_visibility='collapsed')
