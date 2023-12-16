@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
- 
+
 # Header
 st.header('Grafik Sinus & Cosinus :sparkles:')
 st.subheader('Plot Grafik')
