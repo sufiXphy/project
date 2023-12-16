@@ -8,16 +8,16 @@ st.subheader('Konversi Suhu')
 
 c1, c2 = st.columns(2)
 
- with c1:
-      x = st.number_input('Suhu ', value=100)
-      st.write('Dikonversikan ke: ')
- with c2:
-      satuan = st.selectbox(
-          'Satuan',
-          ('C', 'F', 'R','K'),key='k1')
-      konversi = st.selectbox(
-          'Konversi',
-          ('C', 'F', 'R','K'),key='k2')
+with c1:
+    x = st.number_input('Suhu ', value=100)
+    st.write('Dikonversikan ke: ')
+with c2:
+    satuan = st.selectbox(
+        'Satuan',
+        ('C', 'F', 'R','K'),key='k1')
+    konversi = st.selectbox(
+        'Konversi',
+        ('C', 'F', 'R','K'),key='k2')
 
 if(satuan=='C'):
    if(konversi=='C'):
