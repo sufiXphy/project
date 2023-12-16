@@ -5,9 +5,10 @@ import streamlit as st
 # Header
 st.header('Sufiati :sparkles:')
 st.subheader('Plot')
- 
-nama = st.text_input('Nama', 'Sufi', label_visibility='collapsed')
-st.write('Halo',nama)
+
+option = st.selectbox(
+    'satuan',
+    ('C', 'F', 'R','K'))
 
 f1 = st.number_input('f1 = ', value=1)
 
